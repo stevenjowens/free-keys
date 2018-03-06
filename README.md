@@ -2,7 +2,8 @@
 
 Show free bindings in current buffer. Based on https://gist.github.com/bjorne/3796607
 
-To use, call the command `free-keys`. This package takes into account the major mode bindings as well as any bindings occupied by minor modes active in current buffer. If called with prefix argument `C-u`, you can specify a prefix map to be used, such as `C-c` or `C-c C-x` (these are specified as a string).
+
+To use, call the command `free-keys`. This package takes into account the major mode bindings as well as any bindings occupied by minor modes active in current buffer. Do "C-u M-x free-keys" and free-keys will prompt you for a prefix to use. Enter the prefix as a plain string. For example, if you want the prefix C-x, don't hold down the control key and press x, simply type the characters "C-x" at the "Prefix:" prompt.
 
 You can customize the variable `free-keys-modifiers` if you use non-standard modifiers, such as `H` for hyper, `s` for super or `S` for shift. By default this list contains `C`, `M`, `C-M` and no modifier.
 
